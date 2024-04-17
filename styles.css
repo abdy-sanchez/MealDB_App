@@ -1,0 +1,24 @@
+#main-data{
+
+    display: none;
+}
+
+#error{
+
+    display: none;
+}
+
+#data-3-options{
+
+    display: none;
+}
+
+.show-text{
+
+    display: list-item;
+}
+
+.no-text{
+
+    display: none;
+}
