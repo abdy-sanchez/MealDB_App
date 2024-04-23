@@ -178,7 +178,102 @@ async function DisplayResults(option,text){
             data3Options.style.display = "block";
             dataCard.style.display = "none";
             errorCard.style.display = "none";
-            
+
+            //Se borran los elementos de una anterior busqueda
+
+            [...document.querySelectorAll('[class="card"]')].forEach((x)=>x.remove());
+
+
+            //Capturamos los datos de la request y los reemplazamos
+
+            const data = dataResult.meals;
+
+            const resultNumber = document.querySelector('[id="result-number"]');
+
+            resultNumber.innerHTML = `(${data.length}) Results were Found!`;
+
+            //Se genera el ciclo para creal las cards con la info disponible
+
+            const cardsMainContainer = document.querySelector('[id="meal-cards-container"]');
+
+
+            //Bandera para mostrar solo 18 resultados max
+
+            let resultsFlag = 1 ;
+
+
+            for( meal of data ){
+
+                //Card principal contenedora
+                
+                const card = document.createElement("div");
+
+                
+
+                card.setAttribute("class", "card")
+
+                //Contenedor para la imagen
+
+                const imgContainer = document.createElement("div");
+
+                imgContainer.setAttribute("class","image-container");
+
+
+                //Elemento img donde va la imagen
+
+                const mealImage = document.createElement("img");
+
+                mealImage.setAttribute("src", meal.strMealThumb);
+
+
+
+                //Elemento anchor para los nombres de los platos
+
+                const mealName = document.createElement("a");
+
+                mealName.setAttribute("class","meal-link");
+
+                mealName.setAttribute("target","_blank");
+
+                mealName.setAttribute("href","result.html");
+
+                mealName.innerHTML = meal.strMeal;
+
+
+
+                //Anidamiento de los elementos creados
+
+                imgContainer.appendChild(mealImage);
+
+                card.appendChild(imgContainer);
+
+                card.appendChild(mealName);
+
+                cardsMainContainer.appendChild(card);
+
+                resultsFlag++ ;
+
+                if(resultsFlag > 18) break;
+
+            }
+
+
+            //-------------------------------------
+
+
+            let mealClicked = document.querySelectorAll('[class="meal-link"]');
+
+            for (element of mealClicked) {
+                
+                element.addEventListener("click",(clickedAnchor)=>{
+
+                    let selectedMeal = clickedAnchor.target.innerText;
+
+                    localStorage.setItem("selectedMeal",selectedMeal);
+
+                });
+            }
+
 
         }
 
@@ -194,15 +289,22 @@ async function DisplayResults(option,text){
 
 const searchButton = document.querySelector('[id="lupa"]');
 
-searchButton.addEventListener("click",()=>{
+
+    searchButton.addEventListener("click",()=>{
 
 
-    //Captura de los parametros de busqueda
+        //Captura de los parametros de busqueda
+    
+        const selectedOption = document.querySelector('[id="dropdown"]').value ;
+    
+        const inputText = document.querySelector('[id="searchbar"]').value ;
+    
+        DisplayResults(selectedOption,inputText);
+    
+    });
 
-    const selectedOption = document.querySelector('[id="dropdown"]').value ;
 
-    const inputText = document.querySelector('[id="searchbar"]').value ;
 
-    DisplayResults(selectedOption,inputText);
 
-});
+
+
