@@ -233,7 +233,7 @@ async function DisplayResults(option,text){
 
                 mealName.setAttribute("class","meal-link");
 
-                mealName.setAttribute("target","_blank");
+                //mealName.setAttribute("target","_blank");
 
                 mealName.setAttribute("href","result.html");
 

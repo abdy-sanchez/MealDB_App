@@ -13,6 +13,10 @@
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <script src="script.js" defer></script>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Barrio&family=Schoolbell&family=Ribeye&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -23,13 +27,16 @@
             
             <h1>Abdul's Kitchen</h1>
 
-            <input type="text" placeholder="Meal name here!" spellcheck="false" id="searchbar">
+            <div id="input-container">
+                <input type="text" placeholder="Meal name here!" spellcheck="false" id="searchbar">
 
-            <button type="button" id="lupa">
-                <img src="media/icons8-search-150.png"/>
-            </button>
+                <button type="button" id="lupa">
+                    <img src="media/icons8-search-150.png"/>
+                </button>
+            </div>
        
             <div id="option-container">
+
                 <select id="dropdown">
                     <option selected>Name</option>
                     <option>Category</option>
@@ -51,15 +58,26 @@
 
             <h3 id="meal-name">Meal Name</h3>
 
-            <div>
-                <img id="meal-image" src="" alt="Meal image"/>
+            <div id="div-container">
+
+                <div>
+                    <img id="meal-image" src="" alt="Meal image"/>
+                </div>
+    
+                <div>
+                    <div>
+                        <h4>Category:</h4>
+                        <p id="category">text here</p>
+                    </div>
+        
+                    <div>
+                        <h4>Area:</h4>
+                        <p id="area">text here</p>
+                    </div>
+
+                </div>
+
             </div>
-
-            <h4>Category:</h4>
-            <p id="category">text here</p>
-
-            <h4>Area:</h4>
-            <p id="area">text here</p>
 
             <h4>Ingredients:</h4>
             <ul>

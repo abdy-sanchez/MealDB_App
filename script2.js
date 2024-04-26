@@ -30,13 +30,20 @@ async function DisplayData(mealName){
 
     const dataCard = document.querySelector('[id="main-data"]');
 
-    dataCard.style.display = "block";
+    const errorCard = document.querySelector('[id="error"]');
 
     const dataResult = await InnerQuery(mealName);
 
+
     if(dataResult.meals == null){
 
+        errorCard.style.display = "block";
+        dataCard.style.display = "none";
+
     }else{
+
+        dataCard.style.display = "block";
+        errorCard.style.display = "none";
 
         const data = dataResult.meals[0];
 

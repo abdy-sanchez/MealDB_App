@@ -13,26 +13,52 @@
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <script src="script2.js" defer></script>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Barrio&family=Schoolbell&family=Ribeye&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
 
+        <div id="main-card">
+
+            <h1>Abdul's Kitchen</h1>
     
-         <a href="index.html"><h1>Abdul's Kitchen</h1></a>   
+            <a href="index.html">Go Back</a>  
+
+        </div>
+         
+         <div id="error">
+
+            <p>Something Went Wrong :((</p>
+
+        </div>
         
          <div id="main-data">
 
             <h3 id="meal-name">Meal Name</h3>
 
-            <div>
-                <img id="meal-image" src="" alt="Meal image"/>
+            <div id="div-container">
+
+                <div>
+                    <img id="meal-image" src="" alt="Meal image"/>
+                </div>
+    
+                <div>
+                    <div>
+                        <h4>Category:</h4>
+                        <p id="category">text here</p>
+                    </div>
+        
+                    <div>
+                        <h4>Area:</h4>
+                        <p id="area">text here</p>
+                    </div>
+
+                </div>
+
             </div>
-
-            <h4>Category:</h4>
-            <p id="category">text here</p>
-
-            <h4>Area:</h4>
-            <p id="area">text here</p>
 
             <h4>Ingredients:</h4>
             <ul>
@@ -61,8 +87,6 @@
 
             <h4>Recipe:</h4>
             <p id="recipe">Instructions</p>
-
-        </div>
 
 
     </body>

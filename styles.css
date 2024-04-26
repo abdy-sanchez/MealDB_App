@@ -1,11 +1,30 @@
 #main-data{
 
     display: none;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0.7em;
+    padding: 0.7em;
+
+
 }
 
 #error{
 
     display: none;
+
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 40px;
+
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    padding: 0.8em;
+    margin: 0.8em;
+
+    border-radius: 20px;
 }
 
 #data-3-options{
@@ -21,4 +40,152 @@
 .no-text{
 
     display: none;
+}
+
+
+/* //////////////////// ESTILOS //////////////////////// */
+
+body{
+
+    background-image: url("https://st.depositphotos.com/2158511/4377/v/450/depositphotos_43771103-stock-illustration-raw-food-seamless-background.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 67px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0.5em 0 0.2em 0;
+    
+}
+
+#main-card{
+
+    text-align: center;
+
+}
+
+#input-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5em 0em 0.5em 0em;
+
+    gap: 0.5em;
+
+
+}
+
+
+#searchbar{
+
+    border-radius: 15px;
+    padding: 0em 0em 0em 1.5em;
+    height: 2.2em;
+
+    font-size: 16px;
+    
+    background-color: #C3C8D1;
+    border: none;
+
+    box-shadow: 0 2px 4px #000000;
+
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+#lupa{
+
+    border-radius: 35%;
+    box-shadow: 0 2px 4px #000000;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+
+    background-color: #5E91FF ;
+}
+
+#lupa img{
+
+    width: 40px;
+    height: auto;
+}
+
+#dropdown{
+
+    position: relative;
+
+    width:10em;
+    height: 2.5em;
+    
+    border-radius: 13px;
+
+    font-size: 14px;
+    padding-left: 0.6em;
+
+    background-color: #d7dae0 ;
+    border: none;
+
+    box-shadow: 0 2px 4px #000000;
+
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+}
+
+
+h3,h4{
+
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    color: #464646;
+    text-align: center;
+}
+
+#div-container{
+
+    
+display: flex;
+justify-content: space-around;
+align-items: center;
+    
+}
+
+#main-data p,li{
+
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    text-align: center;
+}
+
+ul{
+    list-style: none ;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+
+    height: 20em;
+    width: auto;
+    border-radius: 25px;
+    
 }
