@@ -151,7 +151,7 @@ h3,h4{
     font-family: "Barrio", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 22px;
 
     color: #464646;
     text-align: center;
@@ -182,10 +182,40 @@ ul{
     padding: 0;
 }
 
-img{
+#meal-image{
 
     height: 20em;
     width: auto;
     border-radius: 25px;
+    border: 0.7em solid rgba(212, 212, 212, 0.445);
     
+}
+
+#recipe{
+
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#go-back{
+
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0.5em 0 0.2em 0;
+    padding: 0.2em;
+
+    border-radius: 15px;
+    color: #000000;
+    text-decoration: none;
+   
+}
+
+#go-back:hover{
+
+    color: #0b93e2;
+
 }
