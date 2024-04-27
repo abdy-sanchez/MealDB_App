@@ -30,6 +30,8 @@
 #data-3-options{
 
     display: none;
+
+    margin: 1em;
 }
 
 .show-text{
@@ -218,4 +220,74 @@ ul{
 
     color: #0b93e2;
 
+}
+
+.image-container img{
+
+    height: 17em;
+    width: auto;
+    border-radius: 25px;
+    border: 0.7em solid rgba(212, 212, 212, 0.445);
+
+   
+
+}
+
+#meal-cards-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4.5em;
+    
+}
+
+.card{
+
+    height: 22em;
+    width: 18em;
+    text-align: center;
+ 
+
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 0.5em 0.5em 1.2em 0.5em;
+
+}
+
+.meal-link{
+
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    color: #684803;
+    text-decoration: none;
+
+    
+}
+
+
+.meal-link:hover{
+
+    color: #0b93e2;
+
+}
+
+#result-number{
+
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0.5em 0 0.7em 0;
+    padding: 0.2em;
+
+    text-align: center;
+
+    border-radius: 25px;
 }
