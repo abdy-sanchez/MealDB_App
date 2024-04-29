@@ -1,13 +1,13 @@
-const selectedMeal = localStorage.getItem("selectedMeal");
+const selectedMeal = localStorage.getItem("selectedMealID");
 
 DisplayData(selectedMeal);
 
 
 
 
-async function InnerQuery(name){
+async function InnerQuery(id){
 
-    let url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=' + name ;
+    let url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + id ;
 
     try {
 

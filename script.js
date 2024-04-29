@@ -233,7 +233,7 @@ async function DisplayResults(option,text){
 
                 mealName.setAttribute("class","meal-link");
 
-                //mealName.setAttribute("target","_blank");
+                mealName.setAttribute("id",meal.idMeal);
 
                 mealName.setAttribute("href","result.html");
 
@@ -269,7 +269,10 @@ async function DisplayResults(option,text){
 
                     let selectedMeal = clickedAnchor.target.innerText;
 
+                    let selectedMealID = clickedAnchor.target.id;
+
                     localStorage.setItem("selectedMeal",selectedMeal);
+                    localStorage.setItem("selectedMealID",selectedMealID);
 
                 });
             }
